@@ -12,6 +12,15 @@ A simple and fun Flutter app that randomly generates a number and checks whether
 
 ---
 
+##  Project Structure
+    ```bash
+    lib/
+└── main.dart            # Main logic and UI
+assets/
+└── screenshots/         # App screenshots for README
+
+---
+
 ##  Features
 
 - 🎲 Generates a random number (0–4)  
@@ -28,4 +37,16 @@ To run this project locally:
    ```bash
    git clone https://github.com/your-username/lottery-app.git
    cd lottery-app
+2. **Install dependencies**
+   ```bash
+   flutter pub get
+3. **Run the app**
+   ```bash
+   flutter run
+
+---
+
+##  Contributions
+
+Contributions to Learnify are welcome! If you encounter any issues or have suggestions for improvement, you can fork the repository, make your changes, and submit a pull request.
 
