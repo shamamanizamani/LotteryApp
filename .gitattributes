@@ -1,9 +1,0 @@
-# Focus GitHub language stats on Dart files
-*.dart linguist-detectable=true
-
-# Mark platform-specific folders as "vendored"
-ios/* linguist-vendored
-android/* linguist-vendored
-macos/* linguist-vendored
-windows/* linguist-vendored
-linux/* linguist-vendored
