@@ -15,11 +15,9 @@ A simple and fun Flutter app that randomly generates a number and checks whether
 ##  Project Structure
     ```bash
     lib/
-└── main.dart            # Main logic and UI
-assets/
-└── screenshots/         # App screenshots for README
-
----
+    └── main.dart            # Main logic and UI
+    assets/
+    └── screenshots/         # App screenshots for README
 
 ##  Features
 
@@ -49,4 +47,3 @@ To run this project locally:
 ##  Contributions
 
 Contributions to Learnify are welcome! If you encounter any issues or have suggestions for improvement, you can fork the repository, make your changes, and submit a pull request.
-
