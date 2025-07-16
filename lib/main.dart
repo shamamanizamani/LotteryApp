@@ -24,7 +24,7 @@ class MyHomePage extends StatefulWidget {
 
 class MyHomeState extends State<MyHomePage> {
   Random random = Random();
-  int x =2;
+  int x = 2;
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +38,6 @@ class MyHomeState extends State<MyHomePage> {
           ),
         ),
       ),
-      
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -55,38 +54,44 @@ class MyHomeState extends State<MyHomePage> {
               ),
               child: Padding(
                 padding: const EdgeInsets.all(20),
-                child: x==2 ? Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Icon(Icons.error, color: Colors.red, size: 35),
-                    SizedBox(height: 20),
-                    Text('Hurrii we won we rich now, your number is $x', textAlign: TextAlign.center,),
-                  ],
-                ) : Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Icon(Icons.error, color: Colors.red, size: 35),
-                    SizedBox(height: 20),
-                    Text('Better luck next time, you number is $x', textAlign: TextAlign.center,),
-                  ],
-                ),
+                child: x == 2
+                    ? Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Icon(Icons.done_all , color: Colors.green, size: 35),
+                          SizedBox(height: 20),
+                          Text(
+                            'Hurrii we won we rich now, your number is $x',
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      )
+                    : Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Icon(Icons.error, color: Colors.red, size: 35),
+                          SizedBox(height: 20),
+                          Text(
+                            'Better luck next time, you number is $x',
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ),
               ),
-              ),
+            ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-          onPressed: (){
-            x = random.nextInt(5);
-            print(x.toString());
-            setState(() {
-
-            });
-          },
-          child: Icon(Icons.refresh),
+        onPressed: () {
+          x = random.nextInt(5);
+          print(x.toString());
+          setState(() {});
+        },
+        child: Icon(Icons.refresh),
       ),
-      );
+    );
   }
 }
