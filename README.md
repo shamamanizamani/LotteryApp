@@ -46,4 +46,4 @@ To run this project locally:
 
 ##  Contributions
 
-Contributions to Learnify are welcome! If you encounter any issues or have suggestions for improvement, you can fork the repository, make your changes, and submit a pull request.
+Contributions are welcome! If you encounter any issues or have suggestions for improvement, you can fork the repository, make your changes, and submit a pull request.
